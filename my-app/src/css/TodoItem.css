@@ -1,0 +1,30 @@
+.TodoItem_Container{
+    
+    display: flex;
+    background: linear-gradient(135deg,#ff9f9f ,#b2ff9f);
+    align-items: center;
+    width: 500px;
+    flex-direction: column;
+    margin: 10% auto;
+    border: 1px solid #efefef;
+    padding: 2em 0;
+    box-shadow: 10px 10px 20px rgb(126, 96, 129);
+}
+
+.todo-item{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 2rem 3rem;
+    border-bottom: 1px solid #646464ca;
+    font-size: 1.25rem;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+    outline: 0;
+}
