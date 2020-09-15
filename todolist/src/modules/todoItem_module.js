@@ -13,6 +13,12 @@ import '../css/TodoItem.css'
 // }
 
 function TodoItem(props){
+
+    const completedStyle = {
+        fontStyle: "italic",
+        color: "#cdcdcd",
+        textDecoration: "line-through"
+    }
         return(
             <div className="todo-item">
                 <input 
@@ -21,7 +27,7 @@ function TodoItem(props){
                 className = "checkbox" 
                 onChange = {() => props.HandleCheckbox(props.info.id)}
                 />
-                <label>{props.info.text}</label>
+                <label style = {props.info.completed ? completedStyle : null} >{props.info.text}</label>
                 <hr/>
             </div>
         )

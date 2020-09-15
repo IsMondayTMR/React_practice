@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// ReactDOM.render(<input value="hi" />, mountNode);
+
+// setTimeout(function() {
+//   ReactDOM.render(<input value={null} />, mountNode);
+// }, 1000);
 ReactDOM.render(
   <React.StrictMode>
     <App />
